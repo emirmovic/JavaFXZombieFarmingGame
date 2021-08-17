@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="borderMain" prefHeight="200" prefWidth="320" style="-fx-background-color: Lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller.ExpandedColumnController">
+    <center>
+        <GridPane fx:id="wholeFarmPlots" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-border-color: saddlebrown;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="160.0" prefWidth="160.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="160.0" prefWidth="160.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="160.0" prefWidth="160.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="160.0" prefWidth="160.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="160.0" prefWidth="160.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Pane id="emptyPlot:00" fx:id="plot00" layoutX="11.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;">
+                </Pane>
+                <Pane id="emptyPlot:01" fx:id="plot01" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:02" fx:id="plot02" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="2">
+                </Pane>
+                <Pane id="emptyPlot:03" fx:id="plot03" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="3">
+                </Pane>
+                <Pane id="emptyPlot:04" fx:id="plot04" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="4">
+                </Pane>
+                <Pane id="emptyPlot:10" fx:id="plot10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.rowIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:11" fx:id="plot11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:12" fx:id="plot12" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:13" fx:id="plot13" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:14" fx:id="plot14" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                </Pane>
+                <Pane id="emptyPlot:20" fx:id="plot20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.rowIndex="2">
+                </Pane>
+                <Pane id="emptyPlot:21" fx:id="plot21" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                </Pane>
+                <Pane id="emptyPlot:22" fx:id="plot22" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                </Pane>
+                <Pane id="emptyPlot:23" fx:id="plot23" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                </Pane>
+                <Pane id="emptyPlot:24" fx:id="plot24" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#interactPlot" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: sienna; -fx-border-color: saddlebrown; -fx-border-width: 10;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                </Pane>
+            </children>
+        </GridPane>
+    </center>
+    <left>
+        <VBox prefHeight="600.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <GridPane fx:id="zombie1box" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <ImageView fx:id="zombie1view" fitHeight="202.0" fitWidth="200.0" preserveRatio="true" translateY="50.0" />
+                </children>
+                <columnConstraints>
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+            <GridPane id="zombie2box" alignment="CENTER_LEFT" prefHeight="202.0" prefWidth="200.0">
+                <children>
+                    <ImageView fx:id="zombie2view" fitHeight="202.0" fitWidth="200.0" preserveRatio="true" translateY="50.0" />
+                </children>
+                <columnConstraints>
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+            <GridPane id="zombie3" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0">
+                <ImageView fx:id="zombie3view" fitHeight="202.0" fitWidth="200.0" preserveRatio="true" translateY="50.0" />
+                <columnConstraints>
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+        </VBox>
+    </left>
+    <right>
+        <VBox fx:id="inventoryBox" alignment="CENTER" minHeight="-Infinity" minWidth="450.0" prefHeight="575.0" prefWidth="450.0" translateX="-10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fx:id="inventoryName" fill="#4d00ff" text="Comrade's Inventory" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Verdana Italic" size="33.0" />
+                    </font>
+                </Text>
+                <GridPane fx:id="inventoryGrid" prefHeight="488.0" prefWidth="450.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <BorderPane fx:id="box00" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.rowIndex="0">
+                            <top>
+                                <Label fx:id="watering" text="∞" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnWatering.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box01" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                            <top>
+                                <Label fx:id="shovel" text="∞" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnShovel.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box02" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                            <top>
+                                <Label fx:id="sickle" text="∞" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnSickle.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box10" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.rowIndex="1">
+                            <top>
+                                <Label fx:id="amount10" text="Amt1: " BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnBroccoliSeeds.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box11" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <top>
+                                <Label fx:id="amount11" text="Amt2:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnCarrotSeeds.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box12" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <top>
+                                <Label fx:id="amount12" text="Amt3:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnCornSeeds.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box20" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.rowIndex="2">
+                            <top>
+                                <Label fx:id="amount20" text="Amt4:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/grownBroccoli.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box21" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <top>
+                                <Label fx:id="amount21" text="Amt5:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/grownCarrot.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box22" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <top>
+                                <Label fx:id="amount22" text="Amt6:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/grownCorn.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box30" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.rowIndex="3">
+                            <top>
+                                <Label fx:id="amount30" text="Amt7:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font>
+                                </Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/glowing-plants-sprites/sprite_7.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box31" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <top>
+                                <Label fx:id="amount31" text="Amt8:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font>
+                                </Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/glowing-plants-sprites/sprite_1.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box32" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                            <top>
+                                <Label fx:id="amount32" text="Amt9:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font>
+                                </Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/glowing-plants-sprites/sprite_4.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box40" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.rowIndex="4">
+                            <top>
+                                <Label fx:id="amount40" text="Amt10:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Net Found(Edited)/babyBomb.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box41" onMouseClicked="#changeMode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <top>
+                                <Label fx:id="amount41" text="Amt11:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Net Found(Edited)/potion.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                        <BorderPane fx:id="box42" onMouseClicked="#changeMode" prefHeight="260.0" prefWidth="150.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.vgrow="NEVER">
+                            <top>
+                                <Label fx:id="amount42" text="Amt12:" BorderPane.alignment="CENTER">
+                                    <font>
+                                        <Font name="Ink Free" size="16.0" />
+                                    </font></Label>
+                            </top>
+                            <center>
+                                <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <image>
+                                        <Image url="@../Images/Drawn/fert.png" />
+                                    </image>
+                                </ImageView>
+                            </center>
+                        </BorderPane>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </right>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="1083.0" BorderPane.alignment="CENTER">
+            <Text fx:id="plotIndicator" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+                <HBox.margin>
+                    <Insets bottom="0.0" left="100.0" right="0.0" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Verdana" size="28.0" />
+                </font>
+            </Text>
+            <Pane prefHeight="100.0" prefWidth="84.0" translateX="1110.0">
+                <children>
+                    <ImageView fx:id="strongManView" fitHeight="150.0" fitWidth="200.0" layoutY="-45.0" onMouseClicked="#strongManFly" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="-20.0" visible="false">
+                        <image>
+                            <Image url="@../Images/Pixel/Drawn/farmerStrong.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="84.0" translateX="1150.0">
+                <children>
+                    <ImageView fx:id="weakManView" fitHeight="150.0" fitWidth="200.0" layoutY="-45.0" onMouseClicked="#weakManFly" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="-20.0" visible="false">
+                        <image>
+                            <Image url="@../Images/Pixel/Drawn/farmerWeak.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </Pane>
+        </HBox>
+    </bottom>
+    <top>
+        <VBox prefHeight="110.0" prefWidth="1450.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane fx:id="cloudPane" maxWidth="100.0" prefHeight="55.0" prefWidth="96.0" translateX="-300.0" />
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="1450.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="100.0" />
+                        <HBox minWidth="300.0" prefHeight="100.0" prefWidth="300.0">
+                            <children>
+                                <Text fx:id="day" strokeType="OUTSIDE" strokeWidth="0.0" text="Day ">
+                                    <font>
+                                        <Font name="Verdana Italic" size="40.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <HBox minWidth="300.0" prefHeight="100.0" prefWidth="300.0">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/Pixel/Drawn/drawnCC.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fx:id="money" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+                                    <font>
+                                        <Font name="Verdana Italic" size="40.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <HBox minWidth="200.0" prefHeight="49.0" prefWidth="288.0">
+                            <children>
+                                <Text fx:id="currentItemLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Item:" wrappingWidth="303.3827362060547">
+                                    <font>
+                                        <Font name="Verdana Italic" size="40.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <HBox minWidth="200.0" prefHeight="55.0" prefWidth="284.0" translateX="20.0">
+                            <children>
+                                <Text fx:id="currentItemText" strokeType="OUTSIDE" strokeWidth="0.0" text="Seeds x3" wrappingWidth="281.22576904296875">
+                                    <font>
+                                        <Font name="Verdana Italic" size="40.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="50.0" fitWidth="71.0" onMouseClicked="#goSettings" pickOnBounds="true" preserveRatio="true" translateX="115.0" translateY="10.0">
+                            <image>
+                                <Image url="@../Images/Pixel/Net Found(Edited)/gear.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" translateY="20.0">
+                    <children>
+                        <Text fx:id="timeText" strokeType="OUTSIDE" strokeWidth="0.0" text="Time to Night: " translateX="190.0">
+                            <font>
+                                <Font name="System Bold Italic" size="32.0" />
+                            </font>
+                        </Text>
+                        <Pane prefHeight="56.0" prefWidth="578.0" translateX="200.0">
+                            <children>
+                                <Line fx:id="fullDayBar" endX="572.0" stroke="#ffffff74" strokeDashOffset="1.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="20.0" translateX="10.0" translateY="22.0" />
+                                <Line fx:id="dayBar" strokeDashOffset="1.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="20.0" translateX="10.0" translateY="22.0" />
+                                <Line fx:id="growthLine" endX="315.0" endY="41.0" startX="315.0" startY="3.0" strokeWidth="2.0" />
+                                <Text fx:id="growthText" layoutX="288.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Growth">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font></Text>
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>

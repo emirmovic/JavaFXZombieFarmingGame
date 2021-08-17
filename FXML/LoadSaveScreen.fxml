@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderMain" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller.LoadSaveController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane fx:id="cloudPane" prefHeight="200.0" prefWidth="200.0" translateX="-250.0" />
+                  <ImageView fitHeight="50.0" fitWidth="71.0" onMouseClicked="#goSettings" pickOnBounds="true" preserveRatio="true" translateX="1230.0" translateY="15.0">
+                     <image>
+                        <Image url="@../Images/Pixel/Net Found(Edited)/gear.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Button fx:id="saveOne" mnemonicParsing="false" onMouseClicked="#selectFile" prefHeight="136.0" prefWidth="1228.0" style="-fx-background-color: yellow; -fx-border-color: gold; -fx-border-width: 2;">
+               <graphic>
+                  <HBox prefHeight="308.0" prefWidth="1302.0">
+                     <children>
+                        <ImageView fx:id="imgOne" fitHeight="154.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                           <image>
+                              <Image url="@../Images/NetFound/emptyFarm.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="121.0" prefWidth="1009.0">
+                           <children>
+                              <Text fx:id="nameOne" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <HBox fx:id="moneyBoxOne" layoutX="495.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="53.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Pixel/Drawn/drawnCC.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="moneyOne" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="dayOne" layoutX="809.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day: 0">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="diffOne" layoutX="627.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty: recruit">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="screenOne" layoutX="14.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen: dis one">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="seasonOne" layoutX="306.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Season:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="saveTwo" mnemonicParsing="false" onMouseClicked="#selectFile" prefHeight="136.0" prefWidth="1228.0" style="-fx-background-color: orange; -fx-border-color: darkorange; -fx-border-width: 2;">
+               <graphic>
+                  <HBox prefHeight="308.0" prefWidth="1302.0">
+                     <children>
+                        <ImageView fx:id="imgTwo" fitHeight="154.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                           <image>
+                              <Image url="@../Images/NetFound/emptyFarm.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="121.0" prefWidth="1009.0">
+                           <children>
+                              <Text fx:id="nameTwo" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <HBox fx:id="moneyBoxTwo" layoutX="495.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="53.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Pixel/Drawn/drawnCC.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="moneyTwo" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="dayTwo" layoutX="809.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day: 0">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="diffTwo" layoutX="627.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty: recruit">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="screenTwo" layoutX="14.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen: dis one">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="seasonTwo" layoutX="306.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Season:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="saveThree" mnemonicParsing="false" onMouseClicked="#selectFile" prefHeight="136.0" prefWidth="1228.0" style="-fx-background-color: lime; -fx-border-color: limegreen; -fx-border-width: 2;">
+               <graphic>
+                  <HBox prefHeight="308.0" prefWidth="1302.0">
+                     <children>
+                        <ImageView fx:id="imgThree" fitHeight="154.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                           <image>
+                              <Image url="@../Images/NetFound/emptyFarm.png" />
+                           </image>
+                        </ImageView>
+                        <Pane prefHeight="121.0" prefWidth="1009.0">
+                           <children>
+                              <Text fx:id="nameThree" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <HBox fx:id="moneyBoxThree" layoutX="495.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="53.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/Pixel/Drawn/drawnCC.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="moneyThree" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="dayThree" layoutX="809.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day: 0">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="diffThree" layoutX="627.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty: recruit">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="screenThree" layoutX="14.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen: dis one">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="seasonThree" layoutX="306.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Season:">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <HBox fx:id="buttonBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="loadSave" mnemonicParsing="false" onMouseClicked="#goLoad" style="-fx-effect: none;" text="Load Save">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="deleteSave" mnemonicParsing="false" onMouseClicked="#deleteSave" style="-fx-text-fill: red; -fx-effect: dropshadow(three-pass-box, red, 10, 0, 0, 0);" text="Delete Save" visible="false">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="newGame" mnemonicParsing="false" onMouseClicked="#newGame" text="New Game">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="grass" alignment="BOTTOM_CENTER" prefHeight="139.0" prefWidth="1500.0" spacing="1" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="100.0" prefWidth="1500.0" style="-fx-background-color: saddlebrown;" />
+   </bottom>
+
+      </BorderPane>

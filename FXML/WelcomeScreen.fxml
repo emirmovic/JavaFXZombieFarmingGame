@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller.WelcomeScreenController">
+   <children>
+      <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" style="-fx-background-color: lightblue;">
+          <top>
+              <VBox alignment="CENTER" spacing="100.0">
+                  <padding>
+                      <Insets bottom="50" top="160" />
+                  </padding>
+                  <children>
+                      <Text fx:id="agriText" fill="goldenrod" style="-fx-font-weight: bold;" text="AgriCorp Presents">
+                          <font>
+                              <Font name="Verdana Bold Italic" size="60.0" />
+                          </font>
+                      </Text>
+                      <Text fx:id="deadText" style="-fx-font-weight: bold;" text="DEAD HARVEST">
+                          <font>
+                              <Font name="Meiryo Bold" size="70.0" />
+                          </font>
+                     <fill>
+                        <RadialGradient centerX="0.5198019896403397" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+                           <stops>
+                              <Stop color="#128421" />
+                              <Stop color="BLACK" offset="0.9523628048780489" />
+                              <Stop color="BLACK" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                      </Text>
+                      <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goLoadSave" prefHeight="50.0" prefWidth="150.0" style="-fx-effect: dropshadow(three-pass-box, red, 10, 0, 0, 0); -fx-background-radius: 20; -fx-font-size: 35; -fx-background-radius: 5em;" text="Play">
+                          <font>
+                              <Font size="20.0" />
+                          </font>
+                      </Button>
+                  </children>
+              </VBox>
+          </top>
+          <center>
+              <VBox fx:id="container" alignment="BOTTOM_LEFT">
+                  <children>
+                      <HBox fx:id="grass" alignment="BOTTOM_LEFT" spacing="1" />
+                  </children>
+              </VBox>
+          </center>
+          <bottom>
+              <VBox prefHeight="150.0" prefWidth="1500.0" style="-fx-background-color: saddlebrown;" />
+          </bottom>
+      
+      </BorderPane>
+      <Pane fx:id="cloudPane" prefHeight="200.0" prefWidth="200.0" translateX="-300.0" />
+      <ImageView fitHeight="50.0" fitWidth="71.0" onMouseClicked="#goSettings" pickOnBounds="true" preserveRatio="true" translateX="1430.0" translateY="15.0">
+         <image>
+            <Image url="@../Images/Pixel/Net%20Found(Edited)/gear.png" />
+         </image>
+      </ImageView>
+      <Button mnemonicParsing="false" onMouseClicked="#goCredits" text="Credits" translateX="20.0" translateY="550.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

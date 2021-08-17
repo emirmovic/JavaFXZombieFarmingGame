@@ -1,0 +1,154 @@
+Please don't touch this, this is the original animation code I had for the zombies when walking across the farm.
+If the template method I am currently using breaks I want to have this one for reference.
+
+//                    if (zombie1view.getTranslateX() >= 860.0 && !stopFrames[0]) {
+//                        if (!pauseWalk[0]) {
+//                            pauseWalk[0] = true;
+//                            frame[0] = 0;
+//
+//                            deathFrames[0] = Math.random() >= .5;
+//                        }
+//
+//                        if (deathFrames[0]) {
+//                            zombie1view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_DEATH[frame[0]])));
+//
+//                            if (++frame[0] == BOY_ZOMBIE_DEATH.length) {
+//                                stopFrames[0] = true;
+//                            }
+//                        } else {
+//                            zombie1view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_IDLE[frame[0]])));
+//                            frame[0] = (frame[0] + 1 == BOY_ZOMBIE_IDLE.length) ? 0 : frame[0] + 1;
+//                        }
+//                    } else if (!stopFrames[0]) {
+//                        if (!attackFrames[0]) {
+//                            zombie1view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_WALK[frame[0]])));
+//                            zombie1view.setTranslateX(zombie1view.getTranslateX() + 5.0);
+//
+//                            frame[0] = (frame[0] + 1 == BOY_ZOMBIE_WALK.length) ? 0 : frame[0] + 1;
+//                            if (frame[0] == 0 && ++walkCycles[0] == 2 && Math.random() >= .55) {
+//                                attackFrames[0] = true;
+//                                attackCycles[0] = 0;
+//                                walkCycles[0] = 0;
+//                            }
+//                        } else {
+//                            zombie1view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_ATTACK[frame[0]])));
+//                            frame[0] = (frame[0] + 1 == BOY_ZOMBIE_ATTACK.length) ? 0 : frame[0] + 1;
+//                            if (frame[0] == 0 && ++attackCycles[0] == 2) {
+//                                attackFrames[0] = false;
+//                                attackCycles[0] = 0;
+//                                walkCycles[0] = 0;
+//                            }
+//                        }
+//                    }
+//
+//                    if (zombie2view.getTranslateX() >= 860.0 && !stopFrames[1]) {
+//                        if (!pauseWalk[1]) {
+//                            pauseWalk[1] = true;
+//                            frame[1] = 0;
+//
+//                            deathFrames[1] = Math.random() >= .5;
+//                        }
+//
+//                        if (deathFrames[1]) {
+//                            zombie2view.setImage(new Image(getClass().getResourceAsStream(GIRL_ZOMBIE_DEATH[frame[1]])));
+//
+//                            if (++frame[1] == GIRL_ZOMBIE_DEATH.length) {
+//                                stopFrames[1] = true;
+//                            }
+//                        } else {
+//                            zombie2view.setImage(new Image(getClass().getResourceAsStream(GIRL_ZOMBIE_IDLE[frame[1]])));
+//                            frame[1] = (frame[1] + 1 == GIRL_ZOMBIE_IDLE.length) ? 0 : frame[1] + 1;
+//                        }
+//                    } else if (!stopFrames[1]) {
+//                        if (!attackFrames[1]) {
+//                            zombie2view.setImage(new Image(getClass().getResourceAsStream(GIRL_ZOMBIE_WALK[frame[1]])));
+//                            zombie2view.setTranslateX(zombie2view.getTranslateX() + 5.0);
+//
+//                            frame[1] = (frame[1] + 1 == GIRL_ZOMBIE_WALK.length) ? 0 : frame[1] + 1;
+//                            if (frame[1] == 0 && ++walkCycles[1] == 2 && Math.random() >= .55) {
+//                                attackFrames[1] = true;
+//                                attackCycles[1] = 0;
+//                                walkCycles[1] = 0;
+//                            }
+//                        } else {
+//                            zombie2view.setImage(new Image(getClass().getResourceAsStream(GIRL_ZOMBIE_ATTACK[frame[1]])));
+//                            frame[1] = (frame[1] + 1 == GIRL_ZOMBIE_ATTACK.length) ? 0 : frame[1] + 1;
+//                            if (frame[1] == 0 && ++attackCycles[1] == 2) {
+//                                attackFrames[1] = false;
+//                                attackCycles[1] = 0;
+//                                walkCycles[1] = 0;
+//                            }
+//                        }
+//                    }
+//
+//                    if (zombie3view.getTranslateX() >= 860.0 && !stopFrames[2]) {
+//                        if (!pauseWalk[2]) {
+//                            pauseWalk[2] = true;
+//                            frame[2] = 0;
+//
+//                            deathFrames[2] = Math.random() >= .5;
+//                        }
+//
+//                        if (!deathFrames[2]) {
+//                            zombie3view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_IDLE[frame[2]])));
+//                            frame[2] = (frame[2] + 1 == BOY_ZOMBIE_IDLE.length) ? 0 : frame[2] + 1;
+//                        } else {
+//                            zombie3view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_DEATH[frame[2]])));
+//
+//                            if (++frame[2] == BOY_ZOMBIE_DEATH.length) {
+//                                stopFrames[2] = true;
+//                            }
+//                        }
+//                    } else if (!stopFrames[2]) {
+//                        if (!attackFrames[2]) {
+//                            zombie3view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_WALK[frame[2]])));
+//                            zombie3view.setTranslateX(zombie3view.getTranslateX() + 5.0);
+//
+//                            frame[2] = (frame[2] + 1 == BOY_ZOMBIE_WALK.length) ? 0 : frame[2] + 1;
+//                            if (frame[2] == 0 && ++walkCycles[2] == 2 && Math.random() >= .55) {
+//                                attackFrames[2] = true;
+//                                attackCycles[2] = 0;
+//                                walkCycles[2] = 0;
+//                            }
+//                        } else {
+//                            zombie3view.setImage(new Image(getClass().getResourceAsStream(BOY_ZOMBIE_ATTACK[frame[2]])));
+//                            frame[2] = (frame[2] + 1 == BOY_ZOMBIE_ATTACK.length) ? 0 : frame[2] + 1;
+//                            if (frame[2] == 0 && ++attackCycles[2] == 2) {
+//                                attackFrames[2] = false;
+//                                attackCycles[2] = 0;
+//                                walkCycles[2] = 0;
+//                            }
+//                        }
+//                    }
+
+<bottom>
+        <HBox prefHeight="100.0" prefWidth="1083.0" BorderPane.alignment="CENTER">
+            <Text fx:id="waterIndicator" strokeType="OUTSIDE" strokeWidth="0.0" text="Water Level for Plot #X: 80 out of 100" visible="false">
+                <HBox.margin>
+                    <Insets bottom="0.0" left="100.0" right="0.0" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Verdana" size="40.0" />
+                </font>
+            </Text>
+        </HBox>
+    </bottom>
+
+    <BorderPane fx:id="box42" prefHeight="260.0" prefWidth="150.0" style="-fx-border-color: red;" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.vgrow="NEVER">
+                                <top>
+                                    <Label fx:id="amount42" text="Amt12:" BorderPane.alignment="CENTER">
+                               <font>
+                                  <Font name="Ink Free" size="16.0" />
+                               </font></Label>
+                                </top>
+                                 <center>
+                                    <ImageView fitHeight="179.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="BOTTOM_CENTER">
+                                       <image>
+                                          <Image url="@../Images/Pixel/Drawn/farmerStrong.png" />
+                                       </image>
+                                    </ImageView>
+                                 </center>
+                                 <GridPane.margin>
+                                    <Insets top="48.0" />
+                                 </GridPane.margin>
+                            </BorderPane>
